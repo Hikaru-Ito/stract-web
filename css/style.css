@@ -1,0 +1,306 @@
+body {
+  font-family: avenir next; }
+
+#hbs-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 104px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  z-index: 10; }
+  #hbs-header h1 {
+    position: absolute;
+    display: block;
+    top: 24px;
+    left: 32px;
+    padding: 0;
+    margin: 0; }
+    #hbs-header h1 span {
+      display: none; }
+    #hbs-header h1 img {
+      width: auto;
+      height: 64px; }
+  #hbs-header nav {
+    position: absolute;
+    top: 30px;
+    right: 64px; }
+    #hbs-header nav .menu {
+      width: 120px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none; }
+      #hbs-header nav .menu .main {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.0em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em; }
+      #hbs-header nav .menu .sub {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.6em; }
+
+#hbs-topview-area {
+  position: relative;
+  background: #324148;
+  vertical-align: middle;
+  display: table-cell;
+  width: 100vw;
+  height: 100vh; }
+  #hbs-topview-area .center-logo {
+    margin-top: -10%;
+    margin-bottom: 36px;
+    position: relative;
+    text-align: center;
+    z-index: 5; }
+    #hbs-topview-area .center-logo .logo-img {
+      width: 200px; }
+  #hbs-topview-area .top-message {
+    font-family: "Noto Sans Japanese";
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2.4em;
+    letter-spacing: 0.154em;
+    z-index: 5; }
+  #hbs-topview-area .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background: url("/images/video-bg.jpg");
+    background-size: cover;
+    z-index: 2; }
+    #hbs-topview-area .video-wrapper:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 196, 221, 0.2);
+      z-index: 1; }
+    #hbs-topview-area .video-wrapper video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto; }
+  #hbs-topview-area .arrow-button {
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background: url("/images/arrow-button.png");
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    z-index: 5; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 46px; }
+  .section-title:after {
+    content: '';
+    display: block;
+    background: #00C4DD;
+    width: 64px;
+    height: 2px;
+    margin: 12px auto; }
+  .section-title .title-sub {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #616161;
+    margin-bottom: 24px; }
+  .section-title h2 {
+    font-weight: 300;
+    padding: 0;
+    font-size: 2.4em;
+    text-transform: uppercase; }
+
+#concepts {
+  padding: 64px 0;
+  text-align: center;
+  background: #F2F2F2; }
+  #concepts .concepts-message {
+    font-weight: 300;
+    font-size: 1.0em;
+    color: #333333;
+    line-height: 190%;
+    letter-spacing: 0.08em; }
+
+#business {
+  padding: 64px 0; }
+  #business .b-panels {
+    padding-bottom: 32px; }
+    #business .b-panels .b-panel {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      vertical-align: middle;
+      background: #377BC6;
+      margin-bottom: 16px; }
+      #business .b-panels .b-panel .p-title {
+        font-family: "Noto Sans Japanese";
+        font-weight: 100;
+        color: #fff;
+        font-size: 2.0em;
+        padding: 0 8px; }
+    #business .b-panels .sm-p {
+      background: url("/images/sm-app-bg.png");
+      background-size: cover; }
+    #business .b-panels .if-p {
+      background: url("/images/sm-if-bg.png");
+      background-size: cover; }
+  #business .b-section {
+    padding: 32px 0; }
+  #business .b-sec-title {
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 14px;
+    text-align: center; }
+  #business .b-sec-message {
+    font-weight: 600;
+    font-size: 1.0em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 46px; }
+  #business .projects .t-area {
+    text-align: center; }
+    #business .projects .t-area .thumb {
+      width: 90%; }
+  #business .projects .d-area .logo {
+    width: 240px;
+    margin-bottom: 16px; }
+  #business .projects .d-area .sub-title {
+    font-weight: bold;
+    color: #444; }
+  #business .projects .d-area .description {
+    line-height: 190%;
+    letter-spacing: 0.04em; }
+  #business .projects .d-area h3 {
+    font-size: 1px;
+    color: transparent;
+    padding: 0;
+    margin: 0; }
+  #business .projects .d-area .button {
+    margin-top: 34px;
+    display: inline-block;
+    padding: 8px 36px;
+    border: 1px solid #0C9CEE;
+    color: #0C9CEE;
+    font-size: 1.0em;
+    border-radius: 4px; }
+  #business .records {
+    margin-top: 16px; }
+  #business .r-badge {
+    display: inline-block;
+    font-family: "Noto Sans Japanese";
+    padding: 8px 24px;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-right: 8px; }
+  #business .imagine-blue {
+    background: #00ACC1; }
+  #business .ma {
+    background: #455A64; }
+  #business .logos {
+    padding: 48px 0;
+    text-align: center; }
+    #business .logos .ll {
+      width: auto;
+      height: 60px;
+      margin: 0 16px; }
+  #business .counter-box {
+    padding-top: 24px; }
+    #business .counter-box .feature-center {
+      text-align: center;
+      padding: 0 20px 40px 20px; }
+      #business .counter-box .feature-center .counter {
+        font-size: 46px;
+        margin-bottom: 20px;
+        color: #0C9CEE;
+        display: block;
+        font-weight: 400; }
+      #business .counter-box .feature-center .counter-label {
+        display: block;
+        font-size: 1.1em;
+        color: #555;
+        font-weight: 100; }
+
+#company {
+  background: #F2F2F2;
+  padding: 64px 0; }
+  #company .c-contents {
+    margin: 0 auto;
+    width: 60%; }
+
+#hbs-footer {
+  background: #324148;
+  padding: 32px 0;
+  color: #fff; }
+  #hbs-footer .company-info .slogan {
+    padding-left: 8px;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500; }
+  #hbs-footer .navigation {
+    margin-top: 20px; }
+    #hbs-footer .navigation a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      height: 36px;
+      padding: 8px 0;
+      margin: 0 16px;
+      text-align: center; }
+  #hbs-footer .copyright {
+    color: #ddd;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 24px 0 0 0; }
+
+@media (max-width: 768px) {
+  #hbs-header {
+    display: none; }
+  #company .c-contents {
+    width: 100%; }
+  #hbs-topview-area .top-message {
+    font-family: "Noto Sans Japanese";
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.4em;
+    letter-spacing: 0.154em;
+    z-index: 5;
+    padding: 0 8px; }
+  #hbs-topview-area .video-wrapper video {
+    display: none; }
+  #business .b-panels .b-panel .p-title {
+    font-size: 1.5em; }
+  #business .projects .d-area {
+    text-align: center;
+    padding-top: 16px; }
+  #hbs-footer .navigation {
+    display: none; } }
