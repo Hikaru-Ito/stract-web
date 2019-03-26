@@ -204,8 +204,10 @@ body {
     padding: 8px 36px;
     border: 1px solid #0C9CEE;
     color: #0C9CEE;
+    text-align: center;
     font-size: 1.0em;
-    border-radius: 4px; }
+    border-radius: 4px;
+    width: 198px; }
   #business .records {
     margin-top: 16px; }
   #business .r-badge {
@@ -213,7 +215,7 @@ body {
     font-family: "Noto Sans Japanese";
     padding: 8px 24px;
     border-radius: 4px;
-    margin: 0 auto;
+    margin: 0 auto 8px auto;
     padding: 8px 16px;
     color: #fff;
     font-weight: 400;
@@ -241,6 +243,8 @@ body {
         color: #0C9CEE;
         display: block;
         font-weight: 400; }
+      #business .counter-box .feature-center .m {
+        font-size: 24px; }
       #business .counter-box .feature-center .counter-label {
         display: block;
         font-size: 1.1em;
